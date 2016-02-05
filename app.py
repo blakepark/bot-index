@@ -11,7 +11,6 @@ import raven
 
 import webhook
 
-
 def main():
   collections = os.environ.get('COLLECTIONS', '')
   s3_url = os.environ.get('S3', '')
@@ -54,4 +53,3 @@ if __name__ == '__main__':
   else:
     threading.Thread(target=main).start()
     bottle.run(host='0.0.0.0', port=port)
-  

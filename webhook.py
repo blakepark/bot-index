@@ -34,9 +34,3 @@ class Webhook(object):
       return
 
     return r.text
-    
-    
-
-
-    
-    
